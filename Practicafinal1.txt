@@ -1,0 +1,44 @@
+Problematica
+
+La empresa "Super Tech" pierde dinero en la transaccion de dinero. 
+Por errores humanos se pierde dinero en la conversion de dinero, de Usd a Peso mexicano y viceversa.
+
+-------------------------
+
+Algoritmo:
+
+1: Definir el valor actual del euro y dolar respecto al peso mexicano
+2. Solicitar al usuario el tipo de conversion (usd a mex o eur a mex)
+3. Solicitar el monto a convertir
+4. Realizar la conversion
+5. Mostrar resultado
+
+--------------------------
+
+Pseudocodigo:
+
+Inicio:
+
+    1: Definir el valor actual del euro y dolar respecto al peso mexicano
+ 
+    Definir tipo_cambio_eur_a_mex = 23.70
+    Definir tipo_cambio_usd_a_mex = 20.75
+
+    2. Solicitar al usuario el tipo de conversion (usd a mex o eur a mex)
+    Solicitar al usuario el tipo de conversion (EUR/USD)
+    Mostrar mensaje "Ingrese la moneda origen para la conversion"
+
+    3. Solicitar el monto a convertir
+    Mostrar mensaje "Ingrese el monto a convertir"
+
+    4. Realizar la conversion
+    5. Mostrar resultado
+
+    Si tipo_conversion == "eur":
+        calcular_resultado = monto_a_convenir * tipo_cambio_eur_a_mex
+        Mostrar "El resultado de la conversion de EUR a MEX es: ", resultado
+    Sino si tipo_conversion == "usd":    
+        calcular_resultado = monto_a_convenir * tipo_cambio_usd_a_mex
+        Mostrar "El resultado de la conversion de USD a MEX es: ", resultado
+    Sino:
+        Mostrar: "No esta disponible este tipo de conversion actualmente"    
